@@ -1,0 +1,11 @@
+.ctrl__frame {
+    height: 950px;
+}
+
+
+
+@media all and (max-width: 850px) {
+    .ctrl__frame {
+        height: 830px;
+    }
+}

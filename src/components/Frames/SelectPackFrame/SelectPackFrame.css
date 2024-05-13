@@ -1,0 +1,17 @@
+.pack__frame {
+    height: 950px;
+}
+
+
+@media all and (max-width: 850px) {
+    .pack__frame {
+        height: 830px;
+    }
+}
+
+
+@media all and (max-width: 500px) {
+    .pack__frame {
+        height: 490px;
+    }
+}

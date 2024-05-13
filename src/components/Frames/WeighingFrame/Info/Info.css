@@ -1,0 +1,38 @@
+.info{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr; 
+    }
+
+    .info__left {
+        margin: 20px 0px;   
+    }
+
+    .info__left-line {
+        width: 100%;
+        display: flex;
+        background: #00848B;
+        margin-bottom: 10px;
+    }
+
+    .info__left-line:last-child {
+        margin-bottom: 0;
+    }
+
+  
+    @media all and (max-width: 450px) {
+        .info {
+            margin: 10px;
+            display: block;
+        }
+
+        .info__left {
+            margin: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    
+    

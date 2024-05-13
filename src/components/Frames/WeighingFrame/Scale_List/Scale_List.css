@@ -1,0 +1,122 @@
+.scale-list {
+    height: 100%;
+    border-radius: 6px;
+    background: #00848B;
+    justify-content: center;
+    align-items: center; 
+    display: grid;
+    grid-template-columns: repeat(5, 75px);
+    gap: 15px;
+    padding-inline-start: 0;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px; 
+    margin-right: 20px;
+}
+
+
+.scale-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 75px;
+    border: 1px solid transparent; 
+    border-radius: 7px;
+    background: #10939F;
+    list-style-type: none;
+    box-shadow: -2px -2px 4px 0px rgba(102, 102, 102, 0.25) inset, 1px 1px 3px 0px rgba(255, 255, 255, 0.10) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.scale-list__caption {
+     width: 100%;
+     color: rgba(255, 255, 255, 0.75);
+     text-align: center;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 89.607%; /* 16.129px */
+     margin: 0 auto;
+     top: -20px;
+     position: absolute;
+     }
+
+
+     @media all and (max-width: 1280px) {
+        .scale-list__item {
+            height: 70px;
+        }
+
+        .scale-list {
+            grid-template-columns: repeat(5, 70px);
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .scale-list__item {
+         height: 65px;
+    }
+
+    .scale-list {
+        grid-template-columns: repeat(5, 65px);
+}
+}
+
+@media all and (max-width: 900px) {
+    .scale-list__item {
+        height: 55px;
+    }
+
+    .scale-list {
+        grid-template-columns: repeat(5, 55px);
+    }
+
+    .scale-list__caption {
+        font-size: 14px;        
+    }
+}
+
+@media all and (max-width: 850px) {
+    .scale-list__item {
+        height: 60px;
+    }
+
+    .scale-list {
+        grid-template-columns: repeat(5, 60px);
+        gap: 25px;
+    }
+
+    .scale-list__caption {
+        font-size: 10px;    
+        top: -10px;    
+    }
+}
+     
+@media all and (max-width: 800px) {
+    .scale-list {
+        height: 125px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .scale-list {
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        height: 100px;
+    }
+
+}
+
+@media all and (max-width: 450px) {
+    .scale-list__item {
+        left: 70px;
+    }
+}
+
+
+
+
+
+    

@@ -1,0 +1,149 @@
+.lots__frame{
+        height: 950px;
+}
+
+.select-lot {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.lots {
+    width: max-content; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 9px;
+    background: rgba(0, 0, 0, 0.05); 
+}
+
+.lots__list {
+    display: grid;
+    grid-template-columns:repeat(6, minmax(140px, 1fr));
+    grid-auto-flow: row;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 10px;
+    padding: 10px;
+}
+
+.select-lot__buttons-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* border-radius: -9px; */
+    background: rgba(0, 0, 0, 0.05);   
+}
+
+.select-lot__buttons-arrow_visible {
+    display: none;
+}
+
+.button__more {
+    width: 97px;
+    height: 97px;
+    border-radius: 9px;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
+    /* border: 1px solid white; */
+    margin: 17px;
+    box-shadow: -2px -2px 4px 0px rgba(102, 102, 102, 0.25) inset, 1px 1px 3px 0px rgba(255, 255, 255, 0.10) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-width: 0;
+}
+
+
+.button__more:last-child{
+    margin-left: 0px;
+}
+
+.button__more_left {
+    /* background-image: url(../../images/1.png); */
+    object-fit: cover; 
+    width: 57px;
+    height: 57px;
+    margin: 0;
+    padding: 0;
+}
+
+.button__more_right {
+    /* background-image: url(../../images/2.png); */
+    object-fit: cover;
+}
+
+.is_visible {
+    display: block;
+}
+
+.button__more_visible{
+    display: none;
+}
+
+@media all and (max-width: 1250px) {
+  
+    .lots__list {
+        grid-template-columns: repeat(6, minmax(100px, 1fr));
+        
+}
+}
+@media all and (max-width: 1100px) {
+    .lots__list {
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+}
+}
+
+@media all and (max-width: 850px) {
+.select-lot {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lots__frame{
+    height: 830px;
+}
+}
+
+@media all and (max-width: 747px) {
+.lots__list {
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+}
+
+.lots__list_ctrl {
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+}
+
+
+.button__more {
+    width: 75px;
+    height: 75px;
+    border-radius: 6px;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+@media all and (max-width: 650px) {
+    .lots__list {
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+
+.lots__list_ctrl {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+}
+}
+}
+
+
+@media all and (max-width: 500px) {
+    .lots__list {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+}
+
+.lots__frame{
+    height: 490px;
+}
+}
+

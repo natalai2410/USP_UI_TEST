@@ -1,0 +1,42 @@
+.card-cargo {
+    margin: 0;
+	padding: 15px;  
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+
+    color: #FFF;
+    border-radius: 6px;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    height: 125px;
+    border-width: 0;
+    box-shadow: -2px -2px 4px 0px rgba(102, 102, 102, 0.25) inset, 1px 1px 3px 0px rgba(255, 255, 255, 0.10) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: url(/src/images/cargo_1.png);
+    background-size: 100% 100%;
+}
+
+.card-cargo_isAdded {
+    background: url(/src/images/cargo_isAdded.png);
+    background-size: 100% 100%;
+}
+
+
+.card-cargo__caption {
+    font-size: 24px;
+    align-items: center;
+    width: 100px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.card-cargo__cap {
+    font-size: 13px;
+    width: 100px;
+    text-align: center;
+}
